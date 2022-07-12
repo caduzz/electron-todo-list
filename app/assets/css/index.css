@@ -1,0 +1,212 @@
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.warraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #22242c;
+}
+
+.warraper .cartao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.area-controle {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.area {
+    flex: 2;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-tarefa {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-tarefa label {
+    color: #fff;
+    margin-right: 4px;
+    background-color: #3962e9;
+    border-radius: 4px;
+    font-size: 30px;
+    padding: 4px;
+}
+
+.input-tarefa input {
+    padding: 8px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.filtros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.filtros span {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f7f7f7;
+    color: #333;
+    border-radius: 0 4px 4px 0;
+    border-left: 3px solid #3058df;
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+}
+
+.area-controle input.btn-limpar {
+    height: 45px;
+    border: none;
+    border-radius: 2px;
+    background-color: #2942b1;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in all;
+}
+
+.area-controle input.btn-limpar:hover {
+    border-radius: 10px;
+    background-color: #203285;
+}
+
+.comados-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.area-tarefas {
+    overflow: auto;
+}
+
+.tarefa {
+    margin: 16px;
+    border-left: 3px solid #3058df;
+    background-color: #f7f7f7;
+    border-radius: 0 5px 5px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.tarefa ul {
+    list-style: none;
+    display: flex;
+}
+
+.tarefa ul li {
+    color: #3058df;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.tarefa label {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    word-break: break-word;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.tarefa label:hover {
+    color: #444;
+    border-radius: 2px;
+    background-color: #9992;
+}
+
+.area-tarefas h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 15px;
+    margin: 18px;
+    font-family: sans-serif;
+    background-color: #3058df;
+}
+
+.check {
+    margin: 0 10px;
+}
+
+.checked {
+    color: #3058df;
+    text-decoration: line-through;
+}
+
+.filtros span.active {
+    color: #3058df;
+    border-left: 25px solid#3058df;
+}
+
+.area-tarefas::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.area-tarefas::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 20px;
+    width: 10px;
+    /* color of the tracking area */
+}
+
+.area-tarefas::-webkit-scrollbar-thumb {
+    background-color: #3058df;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+}
+
+.data {
+    font-weight: 520;
+    padding: 5px;
+    color: #4e74f1;
+}
+
+.erro {
+    display: none;
+    text-align: center;
+    padding: 5px;
+    color: #f14e56;
+}

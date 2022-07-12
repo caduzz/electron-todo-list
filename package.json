@@ -1,0 +1,23 @@
+{
+    "name": "Lista-Tarefas",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^11.5.0"
+    },
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/omariosouto/mini-vscode-alurajs.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/omariosouto/mini-vscode-alurajs/issues"
+    },
+    "homepage": "https://github.com/omariosouto/mini-vscode-alurajs#readme"
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projeto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <div class="warraper">
+        <div class="cartao">
+            <div class="area-controle">
+                <div>
+                    <div class="input-tarefa">
+                        <label for="nome-tarefa" class="bx bx-list-plus"></label>
+                        <input id="nome-tarefa" type="text" placeholder="Nova Tarefa">
+                    </div>
+                    <div class="input-tarefa">
+                        <label for="data-tarefa" class="bx bx-calendar"></label>
+                        <input id="data-tarefa" type="date" placeholder="Nova Tarefa">
+                    </div>
+                    <div class="erro">
+                        <p>preencha os campos</p>
+                    </div>
+                    <div class="comados-area">
+                        <div class="filtros">
+                            <span class="active" id="todos">Todas</span>
+                            <span id="pendente">Pendentes</span>
+                            <span id="concluida">Concluidas</span>
+                        </div>
+                    </div>
+                </div>
+                <input class="btn-limpar" type="button" value="Limpar">
+            </div>
+            <div class="area">
+                <ul class="area-tarefas">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/script.js">
+</script>
+
+</html>
